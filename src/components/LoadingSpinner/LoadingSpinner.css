@@ -1,0 +1,29 @@
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  font-size: 25px;
+  color: var(--text-color);
+}
+
+.loading-icon {
+  color: var(--primary-color);
+  font-size: 2rem;
+  animation: animate 2s infinite;
+}
+
+.loading-text{
+  margin-left: 20px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+  

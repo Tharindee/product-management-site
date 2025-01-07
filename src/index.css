@@ -1,0 +1,42 @@
+body{
+  margin: 0 auto;
+  padding: 0;
+  background-color: #E0E0E0;
+}
+
+:root {
+  --primary-color: gold;
+  --secondary-color: white;
+  --text-color: black;
+  --cart-num-color: red;
+  --dark-gold: #d4b000;
+  --background-color: #E0E0E0;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-gold);
+}
+
+.custom-button{
+  padding: 5px 15px !important;
+}
+
+.custom-button2{
+  padding: 8px 16px !important;
+}
+
+.bottom-line{
+  width: 100%;
+  height: 20px;
+  background-color: var(--text-color);
+}

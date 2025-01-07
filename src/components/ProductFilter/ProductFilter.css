@@ -1,0 +1,70 @@
+.product-filter {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    width: 180px;
+    height: 42px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: var( --text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .filter-btn:hover {
+    background-color: var( --text-color);
+    color: var(--primary-color);;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #dee2e5;
+    border-radius: 5px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    margin-top: 0;
+    width: 180px;
+    height: 0;
+    opacity: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .dropdown-menu.open {
+    height: auto;
+    opacity: 1;
+  }
+
+  .dropdown-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+  }
+  
+  @media (min-width: 768px) {
+    .product-filter{
+      margin-bottom: 0;
+    }
+  }

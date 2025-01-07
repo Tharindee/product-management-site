@@ -1,0 +1,21 @@
+input{
+    height: 30px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    outline: none;
+}
+
+::placeholder{
+    font-size: 15px;
+}
+
+@media (min-width: 768px) {
+    input{
+        margin-right: 20px;
+        margin-bottom: 25px;
+    }
+}
